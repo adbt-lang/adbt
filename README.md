@@ -4,4 +4,4 @@
 
 <br>
 
-Head to the [latest release](https://github.com/igorskyflyer/file-format-adbt/releases/latest) page or the [Releases](https://github.com/igorskyflyer/file-format-adbt/releases/) page to read the specifications for all revisions.
+Head to the [latest release](https://github.com/igorskyflyer/file-format-adbt/blob/v1.0.0/README.md) page or the [Releases](https://github.com/igorskyflyer/file-format-adbt/releases/) page to read the specifications for all revisions.
