@@ -4,7 +4,7 @@
 
 <br>
 
-> 🚀 Head to the [Releases](https://github.com/igorskyflyer/file-format-adbt/releases/) page to read the specifications for all revisions.
+> 🚀 Head to the [Releases](https://github.com/igorskyflyer/file-format-adbt/releases/) page to read the specifications of all revisions.
 
 <br>
 
