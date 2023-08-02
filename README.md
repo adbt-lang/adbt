@@ -29,8 +29,8 @@
 - [Variables](#-variables)
   - [Meta variables](#-meta-variables)
     - [Example](#-example)
-  - [Compile variables](#-compile-variables)
-    - [Example](#-example-1)
+  - [Compile variables](#%EF%B8%8F-compile-variables)
+    - [Example](#example)
 - [Code in Action](#-code-in-action)
 - [Samples](#-samples)
 - [License](#-license)
@@ -75,12 +75,15 @@ Even though technically you can write `ADBT` \(`*.adbt`) templates and meta file
 
 Creating and editing `*.adbt` templates and their complementary `*.adbm` meta files is available for Visual Studio Code via the [ADBT extension](https://marketplace.visualstudio.com/items?itemName=igordvlpr.adbt) I created and it includes the following features:
 
+Currently it provides the following features:
+
 - high-performance due to small footprint,
 - language support and encoding for `*.adbt` files,
 - syntax highlighting,
 - auto-complete (Intellisense):
   - functions/statements (including path placeholders),
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
+	- directives,
 - hover information,
 - snippets,
 - meta files `*.adbm` support, relies on built-in JSON support:
