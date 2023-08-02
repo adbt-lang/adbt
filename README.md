@@ -284,7 +284,7 @@ export './my-filter.txt'
 
 <br>
 
-`my-filter.txt`
+`my-filter.txt` (*compiled*)
 ```adblock
 ||somedomain1.com^
 ||somedomain2.com^
