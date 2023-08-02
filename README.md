@@ -683,6 +683,10 @@ Placeholders: `$date`, `$now`
 
 The following samples are available:
 
+- [header template (static)](./samples/header-only-static.adbt)
+- [header template (dynamic)](./samples/header-only-dynamic.adbt)
+- [complete template](./samples/import-rules.adbt)
+
 ---
 
 ## 🪪 License
