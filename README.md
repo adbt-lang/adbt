@@ -208,7 +208,7 @@ Here's an example:
 
 The `header` should be at the top of the `ADBT` template file; comments are allowed before it.
 
-❗Path to the header file to include can be either relative or absolute but must be enclosed within single quotes. Failing to do so, will produce a fatal error.
+❗Path to the header file to include can be either relative or absolute but must be enclosed within single quotes. Failing to do so, will produce a fatal error. If a single or multiple single quotes are present in the path, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
 
 <br>
 
@@ -257,7 +257,7 @@ The filter list file should contain **only** filter rules and Adblock comments, 
 It should **not** include any metadata - that should be included via the [`header`](#header) statement. Doing otherwise will result in metadata conflicts.
 It can contain any valid filter rules and comments.
 
-❗Path to the filter list file to include can be either relative or absolute but must be enclosed within single quotes. Failing to do so, will produce a fatal error.
+❗Path to the filter list file to include can be either relative or absolute but must be enclosed within single quotes. Failing to do so, will produce a fatal error. If a single or multiple single quotes are present in the path, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
 
 <br>
 
@@ -295,7 +295,7 @@ query=
 another-query=
 ```
 
-❗Path of the file to export to must be enclosed within single quotes. Failing to do so, will produce a fatal error.
+❗Path of the file to export to must be enclosed within single quotes. Failing to do so, will produce a fatal error. If a single or multiple single quotes are present in the path, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
 
 <br>
 
