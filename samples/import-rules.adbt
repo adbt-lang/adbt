@@ -1,0 +1,15 @@
+@ run as:
+@
+@ cd file-format-adbt
+@ aria -f './samples/import-rules.adbt'
+@
+
+header './samples/headers/dynamic-header.txt'
+
+# Sample: importing rules
+
+nl
+
+include './samples/rules/domains.txt'
+
+export './samples/output/importing-rules.txt'
