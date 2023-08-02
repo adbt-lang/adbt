@@ -1,0 +1,9 @@
+@ run as:
+@
+@ cd file-format-adbt
+@ aria -f './samples/header-only-static.adbt'
+@
+
+header './samples/headers/static-header.txt'
+# Sample: importing header only
+export './samples/output/header-only-static.txt'
