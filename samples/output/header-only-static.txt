@@ -1,0 +1,20 @@
+[Adblock Plus 2.0]
+!
+!     ___        __   _    __        _      __
+!    /   |  ____/ /  | |  / /____   (_)____/ /
+!   / /| | / __  /   | | / // __ \ / // __  /
+!  / ___ |/ /_/ /    | |/ // /_/ // // /_/ /
+! /_/  |_|\__,_/     |___/ \____//_/ \__,_/
+!
+!
+! Title: AdVoid
+! Description: Blocks ads.
+! Last modified: 2022-10-19T22:03:00+0200
+! Expires: 6 hours (update frequency)
+! Homepage: https://github.com/igorskyflyer/ad-void
+! Author: Igor Dimitrijević (@igorskyflyer)
+! GitHub issues: https://github.com/igorskyflyer/ad-void/issues
+! GitHub pull requests: https://github.com/igorskyflyer/ad-void/pulls
+! License: https://github.com/igorskyflyer/ad-void/blob/main/LICENSE.txt
+! Version: 1.0.4
+! Sample: importing header only
