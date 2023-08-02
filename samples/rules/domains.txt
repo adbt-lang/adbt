@@ -1,0 +1,7 @@
+||somedomain1.com^
+||somedomain2.com^
+||somedomain3.com^
+||somedomain4.com^
+||somedomain5.com^
+||somedomain6.com^
+||somedomain7.com^
