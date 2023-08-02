@@ -1,9 +1,7 @@
 # 📄 ADBT 🪅
 
 > 🐲 This file contains the latest (`v1.0.1`) specification and documentation of `ADBT` - Adblock template files ⚡
-
-<br>
-
+>  
 > 🚀 Head to the [Releases](https://github.com/igorskyflyer/file-format-adbt/releases/) page to read the specifications for all revisions.
 
 <br>
