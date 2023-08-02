@@ -145,7 +145,8 @@ Line break: editor-dependent
   - preferably, you should only have 1 header file and include it,
 - filter files can be included multiple times,
 - export statement **must** be the last statement of the file
-  - only 1 export statement is allowed per template file
+  - only 1 export statement is allowed per template file,
+  - any code after the first `export` statement will be considered unreachable and it won't be parsed nor compiled
 
 <br>
 
@@ -295,6 +296,10 @@ another-query=
 ```
 
 ❗Path of the file to export to must be enclosed within single quotes. Failing to do so, will produce a fatal error.
+
+<br>
+
+> 💡 Any code appearing after the first occurrence of an export statement will be considered unreachable and won't be parsed nor compiled.
 
 <br>
 
