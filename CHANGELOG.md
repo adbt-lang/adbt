@@ -8,3 +8,4 @@
 - **fix**: added unreachable code explanation
 - **fix**: added 1 export per template explanation
 - **fix**: fixed headings
+- **feat**: added samples
