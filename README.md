@@ -15,6 +15,7 @@
   - [Statements](#-statements)
     - [header](#header)
     - [include](#include)
+    - [export](#export)
     - [nl](#nl)
   - [Strings](#%EF%B8%8F-strings)
   - [Comments](#-comments)
