@@ -53,11 +53,11 @@
 ## 📌 Motivation
 
 Ad-blocking filters have always been a valuable tool to improve web browsing experiences but creating and maintaining them often poses challenges. The existing methods can be cumbersome, leading to repetitive tasks and difficult-to-manage source code.  
-Recognizing this issue, I embarked on a project to develop a custom language, file format, parser and a Visual Studio Code extension tailored specifically as Adblock templates. My motivation is to offer filter lists creators and maintainers a more straightforward and efficient way to craft filter lists.  
+Recognizing this issue, I embarked on a project to develop a custom language, file format, parser and a Visual Studio Code extension tailored specifically as Adblock templates. My motivation is to offer filter lists creators and maintainers a more straightforward and efficient way to craft filter lists.
 
-By using `ADBT`, maintainers will be able to incorporate multiple rules into different output filter lists, have the versioning of filter lists done automatically for them, include both internal and exported comments, organize filter lists and filter rules.  
+By using `ADBT`, maintainers will be able to incorporate multiple rules into different output filter lists, have the versioning of filter lists done automatically for them, include both internal and exported comments, organize filter lists and filter rules.
 
-Ultimately, my goal is to empower the Adblock community with an intuitive and user-friendly solution, enhancing the overall ad-blocking experience for everyone.  
+Ultimately, my goal is to empower the Adblock community with an intuitive and user-friendly solution, enhancing the overall ad-blocking experience for everyone.
 
 `ADBT` and its toolchain have also been created to ease the maintenance of my Adblock filter list, [AdVoid](https://github.com/igorskyflyer/ad-void) and `AdVoid` is the first filter list that uses `ADBT` under the hood.
 
@@ -82,13 +82,13 @@ Creating and editing `*.adbt` templates and their complementary `*.adbm` meta fi
 - meta files `*.adbm` support, relies on built-in JSON support:
   - autocomplete (Intellisense),
   - hover info,
-- custom file icon.  
+- custom file icon.
 
 <br>
 
-To actually compile the templates you need to install the current Node >= 18 (**LTS**) and the [`Aria compiler`](https://www.npmjs.com/package/@igor.dvlpr/aria).  
+To actually compile the templates you need to install the current Node >= 18 (**LTS**) and the [`Aria compiler`](https://www.npmjs.com/package/@igor.dvlpr/aria).
 
-Install Node by navigating to their [official site](https://nodejs.org/en).  
+Install Node by navigating to their [official site](https://nodejs.org/en).
 
 Install `Aria` by executing any of the following:
 
@@ -126,7 +126,8 @@ Type: text
 Extension: `.adbm`  
 Encoding: UTF-8  
 Syntax: JSON (custom schema)  
-Line break: editor-dependent  
+Line break: editor-dependent
+
 > 💡 JSON files support both LFs and CRLFs
 
 ---
@@ -274,6 +275,7 @@ Accepts: `path: string`
 Example:
 
 `template.adbt`
+
 ```shell
 include './rules/domains.txt'
 include './rules/cosmetic.txt'
@@ -284,7 +286,8 @@ export './my-filter.txt'
 
 <br>
 
-`my-filter.txt` (*compiled*)
+`my-filter.txt` (_compiled_)
+
 ```adblock
 ||somedomain1.com^
 ||somedomain2.com^
@@ -519,9 +522,10 @@ Now, the header file has 2 dynamic properties, `title` and `description`. They a
 <br>
 
 Here is an example of:
+
 - a reusable header file,
 - a template file
-	- its corresponding meta file,
+  - its corresponding meta file,
 - resulting, compiled filter list file
 
 <br>
@@ -611,6 +615,7 @@ Placeholder: `$file`
 ##### Example
 
 `my-header.txt`
+
 ```adblock
 [Adblock Plus 2.0]
 ! Title: $file
@@ -619,6 +624,7 @@ Placeholder: `$file`
 <br>
 
 `My Filter.adbt`
+
 ```shell
 header './headers/my-header.txt'
 
@@ -636,6 +642,7 @@ The compiled file `./my-filter-list.txt` will have the following metadata:
 <br>
 
 `my-filter-list.txt`
+
 ```adblock
 [Adblock Plus 2.0]
 ! Title: My Filter
@@ -674,8 +681,7 @@ Placeholders: `$date`, `$now`
 
 ## 💡 Samples
 
-The following sample are available:
-
+The following samples are available:
 
 ---
 
@@ -687,22 +693,22 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 ## 🧬 Related
 
-[@igor.dvlpr/adblock-filter-counter](https://www.npmjs.com/package/@igor.dvlpr/adblock-filter-counter)  
+[@igor.dvlpr/adblock-filter-counter](https://www.npmjs.com/package/@igor.dvlpr/adblock-filter-counter)
 
-> *🐲 A dead simple npm module that counts Adblock filter rules.🦘*  
+> _🐲 A dead simple npm module that counts Adblock filter rules.🦘_
 
-[@igor.dvlpr/keppo](https://www.npmjs.com/package/@igor.dvlpr/keppo)  
+[@igor.dvlpr/keppo](https://www.npmjs.com/package/@igor.dvlpr/keppo)
 
-> *🎡 Parse, manage, compare and output SemVer-compatible version numbers. 🧮*
+> _🎡 Parse, manage, compare and output SemVer-compatible version numbers. 🧮_
 
-[@igor.dvlpr/normalized-string](https://www.npmjs.com/package/@igor.dvlpr/normalized-string)  
+[@igor.dvlpr/normalized-string](https://www.npmjs.com/package/@igor.dvlpr/normalized-string)
 
-> *💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮*
+> _💊 NormalizedString provides you with a String type with consistent line-endings, guaranteed. 📮_
 
-[@igor.dvlpr/zing](https://www.npmjs.com/package/@igor.dvlpr/zing)  
+[@igor.dvlpr/zing](https://www.npmjs.com/package/@igor.dvlpr/zing)
 
-> *🐌 Zing is a C# style String formatter for JavaScript that empowers Strings with positional arguments. 🚀*  
+> _🐌 Zing is a C# style String formatter for JavaScript that empowers Strings with positional arguments. 🚀_
 
-[AdVoid](https://github.com/igorskyflyer/ad-void)  
+[AdVoid](https://github.com/igorskyflyer/ad-void)
 
-> *✈ AdVoid is an efficient AdBlock filter that blocks ads, trackers, malware and a lot more if you want it to! 👾*
+> _✈ AdVoid is an efficient AdBlock filter that blocks ads, trackers, malware and a lot more if you want it to! 👾_
