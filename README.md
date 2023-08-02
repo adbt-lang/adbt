@@ -326,7 +326,7 @@ nl
 
 <br>
 
-The newline will be present in the output/compiled filter file. Used to improve readability and/or organize your rules, see [examples](#-examples) below.
+The newline will be present in the output/compiled filter file. Used to improve readability and/or organize your rules, see [samples](#-samples) below.
 
 ---
 
