@@ -1,6 +1,6 @@
 # 📄 ADBT 🪅
 
-🐲 This file contains the latest, `v1.0.1` specification and documentation of `ADBT` - Adblock template files ⚡
+🐲 This file contains the latest, `v1.1.0` specification and documentation of `ADBT` - Adblock template files ⚡
 
 <br>
 
@@ -22,6 +22,7 @@
     - [export](#export)
     - [nl](#nl)
   - [Strings](#%EF%B8%8F-strings)
+  - [Paths](#-paths)
   - [Comments](#-comments)
     - [Internal](#internal)
     - [Exported](#exported)
@@ -31,7 +32,6 @@
     - [Example](#-example)
   - [Compile variables](#%EF%B8%8F-compile-variables)
     - [Example](#example)
-- [Code in Action](#-code-in-action)
 - [Samples](#-samples)
 - [License](#-license)
 - [Related](#-related)
@@ -83,7 +83,7 @@ Currently it provides the following features:
 - auto-complete (Intellisense):
   - functions/statements (including path placeholders),
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
-	- directives,
+  - directives,
 - hover information,
 - snippets,
 - meta files `*.adbm` support, relies on built-in JSON support:
@@ -145,7 +145,7 @@ Line break: editor-dependent
 
 - any line can be blank and all whitespace will be ignored when compiling
   - an explicit blank line can be used as well,
-- any blank line can contain a comment (either internal or exported)
+- any line can contain a comment (either internal or exported)
   - comments are not allowed to exist on the same line with statements,
 - all strings, including paths must be enclosed within single quotes
   - in case of a single quote inside a string, it must be escaped, see [Strings](#EF%B8%8F-strings) for more information
@@ -343,6 +343,14 @@ Strings in `ADBT` are UTF-8 encoded and must be enclosed within single quotes. I
 
 ---
 
+### 🛣️ Paths
+
+Paths in `ADBT` are UTF-8 encoded strings and must be enclosed within single quotes. If a single or multiple single quotes are present in a string, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
+
+Paths can be either **`relative`** or **`absolute`**.
+
+---
+
 ### 📢 Comments
 
 `ADBT` files support two types of comments:
@@ -446,6 +454,7 @@ In its earliest stage, the current properties can be stored in an `*.adbm` file:
 
 - `title`,
 - `description`,
+- `expires`,
 - `versioning`
 
 <br>
@@ -471,6 +480,14 @@ Placeholder: `{title}`
 The description of the filter list.
 
 Placeholders: `{description}`, `{about}`
+
+<br>
+
+#### `expires: string`
+
+The expires field of the filter list.
+
+Placeholders: `{expires}`
 
 <br>
 
@@ -679,10 +696,6 @@ Placeholders: `$entries`, `$count`
 Current date and time formatted as an [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) string.
 
 Placeholders: `$date`, `$now`
-
----
-
-## 🧠 Code in Action
 
 ---
 
