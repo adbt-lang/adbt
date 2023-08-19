@@ -16,4 +16,4 @@
 - **📜 docs**: added unreachable code explanation
 - **📜 docs**: added 1 export per template explanation
 - **📜 docs**: fixed headings
-- **🪅 feat**: added samples
+- **📜 docs**: added samples
