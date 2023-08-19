@@ -343,6 +343,14 @@ Strings in `ADBT` are UTF-8 encoded and must be enclosed within single quotes. I
 
 ---
 
+### 🛣️ Paths
+
+Paths in `ADBT` are UTF-8 encoded strings and must be enclosed within single quotes. If a single or multiple single quotes are present in a string, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
+
+Paths can be either **`relative`** or **`absolute`**.
+
+---
+
 ### 📢 Comments
 
 `ADBT` files support two types of comments:
