@@ -475,6 +475,14 @@ Placeholders: `{description}`, `{about}`
 
 <br>
 
+#### `expires: string`
+
+The expires field of the filter list.
+
+Placeholders: `{expires}`
+
+<br>
+
 #### `versioning: "auto" | "semver" | "timestamp"`
 
 The versioning system of the filter list.
