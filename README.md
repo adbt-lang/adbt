@@ -22,7 +22,7 @@
     - [export](#export)
     - [nl](#nl)
   - [Strings](#%EF%B8%8F-strings)
-  - [Paths](#-paths)
+  - [Paths](#%EF%B8%8F-paths)
   - [Comments](#-comments)
     - [Internal](#internal)
     - [Exported](#exported)
