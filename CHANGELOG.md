@@ -7,6 +7,8 @@
 - **🪅 feat**: added support for Expires meta variable
 - **✅ fix**: ignore whitespace as a candidate for unreachable code
 - **📜 docs**: added [Paths](./README.md#%EF%B8%8F-paths) section
+- **📜 docs**: fixed typos
+- **📜 docs**: removed redundant data for `ADBT` extension for VS Code
 
 <br>
 
