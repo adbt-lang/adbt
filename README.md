@@ -32,7 +32,6 @@
     - [Example](#-example)
   - [Compile variables](#%EF%B8%8F-compile-variables)
     - [Example](#example)
-- [Code in Action](#-code-in-action)
 - [Samples](#-samples)
 - [License](#-license)
 - [Related](#-related)
@@ -697,10 +696,6 @@ Placeholders: `$entries`, `$count`
 Current date and time formatted as an [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) string.
 
 Placeholders: `$date`, `$now`
-
----
-
-## 🧠 Code in Action
 
 ---
 
