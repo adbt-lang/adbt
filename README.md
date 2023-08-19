@@ -145,7 +145,7 @@ Line break: editor-dependent
 
 - any line can be blank and all whitespace will be ignored when compiling
   - an explicit blank line can be used as well,
-- any blank line can contain a comment (either internal or exported)
+- any line can contain a comment (either internal or exported)
   - comments are not allowed to exist on the same line with statements,
 - all strings, including paths must be enclosed within single quotes
   - in case of a single quote inside a string, it must be escaped, see [Strings](#EF%B8%8F-strings) for more information
