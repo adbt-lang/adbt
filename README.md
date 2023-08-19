@@ -75,8 +75,6 @@ Even though technically you can write `ADBT` \(`*.adbt`) templates and meta file
 
 Creating and editing `*.adbt` templates and their complementary `*.adbm` meta files is available for Visual Studio Code via the [ADBT extension](https://marketplace.visualstudio.com/items?itemName=igordvlpr.adbt) I created and it includes the following features:
 
-Currently it provides the following features:
-
 - high-performance due to small footprint,
 - language support and encoding for `*.adbt` files,
 - syntax highlighting,
