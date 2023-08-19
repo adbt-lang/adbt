@@ -22,6 +22,7 @@
     - [export](#export)
     - [nl](#nl)
   - [Strings](#%EF%B8%8F-strings)
+  - [Strings](#-strings)
   - [Comments](#-comments)
     - [Internal](#internal)
     - [Exported](#exported)
