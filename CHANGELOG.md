@@ -6,7 +6,7 @@
 
 - **🪅 feat**: added support for Expires meta variable
 - **✅ fix**: ignore whitespace as a candidate for unreachable code
-- **✅ fix**: added [Paths](./README.md#🛣️-paths) section
+- **✅ fix**: added [Paths](./README.md#-paths) section
 
 <br>
 
