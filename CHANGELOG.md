@@ -6,14 +6,14 @@
 
 - **🪅 feat**: added support for Expires meta variable
 - **✅ fix**: ignore whitespace as a candidate for unreachable code
-- **✅ fix**: added [Paths](./README.md#%EF%B8%8F-paths) section
+- **📜 docs**: added [Paths](./README.md#%EF%B8%8F-paths) section
 
 <br>
 
 ### v1.0.1
 
-- **✅ fix**: added missing export statement
-- **✅ fix**: added unreachable code explanation
-- **✅ fix**: added 1 export per template explanation
-- **✅ fix**: fixed headings
+- **📜 docs**: added missing export statement
+- **📜 docs**: added unreachable code explanation
+- **📜 docs**: added 1 export per template explanation
+- **📜 docs**: fixed headings
 - **🪅 feat**: added samples
