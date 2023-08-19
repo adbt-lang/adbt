@@ -1,6 +1,6 @@
 # 📄 ADBT 🪅
 
-🐲 This file contains the latest, `v1.0.1` specification and documentation of `ADBT` - Adblock template files ⚡
+🐲 This file contains the latest, `v1.1.0` specification and documentation of `ADBT` - Adblock template files ⚡
 
 <br>
 
@@ -83,7 +83,7 @@ Currently it provides the following features:
 - auto-complete (Intellisense):
   - functions/statements (including path placeholders),
   - comments (including comment modifiers, i.e. `TODO`, `FIXME`, `NOTE`),
-	- directives,
+  - directives,
 - hover information,
 - snippets,
 - meta files `*.adbm` support, relies on built-in JSON support:
@@ -446,6 +446,7 @@ In its earliest stage, the current properties can be stored in an `*.adbm` file:
 
 - `title`,
 - `description`,
+- `expires`,
 - `versioning`
 
 <br>
