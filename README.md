@@ -324,6 +324,10 @@ another-query=
 
 <br>
 
+❗Paths are prepended as-is, no matter if the path is relative/absolute.
+
+<br>
+
 #### `export`
 
 > Exports the compiled filter list to a file.
