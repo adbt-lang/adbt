@@ -4,9 +4,9 @@
 
 ### v1.2.0
 
-- **🪅 feat**: implement the **[`import`](./README.md#-import)** statement
+- **🪅 feat**: implement the **[`import`](./README.md#import)** statement
   > **`import`** statements behave exactly the same as **`include`** but prepend the file path of the included filter (as a comment)
-- **🪅 feat**: implement the **[`tag`](./README.md#-tag)** statement
+- **🪅 feat**: implement the **[`tag`](./README.md#tag)** statement
   > Introduce a tagging system; special comments that get inserted in the resulting filter file, for easier navigation, search, etc.
   >
   > _🌟 Inspired by [AdVoid](https://github.com/igorskyflyer/ad-void)'s way of navigation._
