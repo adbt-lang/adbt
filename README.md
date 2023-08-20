@@ -346,6 +346,9 @@ Example:
 tag 'Block these domains'
 include './rules/domains.txt'
 
+tag 'Hide these elements'
+include './rules/cosmetic.txt'
+
 export 'my-filter.txt'
 ```
 
@@ -365,7 +368,7 @@ export 'my-filter.txt'
 🤔 What are tags exactly?
 
 Tags are a part of the tagging system; special comments that get inserted in the resulting filter file, for easier navigation, search, etc.  
-Tags are enumerated - starting with `0` and can contain an optional description.
+Tags are auto-enumerated - starting with `0` and can contain an optional description.
 
 _🌟 Inspired by [AdVoid](https://github.com/igorskyflyer/ad-void)'s way of navigation._
 
