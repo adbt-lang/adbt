@@ -328,6 +328,48 @@ another-query=
 
 <br>
 
+#### `tag`
+
+> Inserts a tag
+
+<br>
+
+Accepts: `description: string` _(optional)_
+
+<br>
+
+Example:
+
+`template.adbt`
+
+```shell
+tag 'Block these domains'
+include './rules/domains.txt'
+
+export 'my-filter.txt'
+```
+
+<br>
+
+`my-filter.txt` (_compiled_)
+
+```adblock
+! {@0} Block these domains
+||somedomain1.com^
+||somedomain2.com^
+||somedomain3.com^
+```
+
+<br>
+
+🤔 What are tags exactly?
+
+Tags are a part of the tagging system; special comments that get inserted in the resulting filter file, for easier navigation, search, etc.
+
+_🌟 Inspired by [AdVoid](https://github.com/igorskyflyer/ad-void)'s way of navigation._
+
+<br>
+
 #### `export`
 
 > Exports the compiled filter list to a file.
