@@ -19,6 +19,8 @@
   - [Statements](#-statements)
     - [header](#header)
     - [include](#include)
+    - [import](#import)
+    - [tag](#tag)
     - [export](#export)
     - [nl](#nl)
   - [Strings](#%EF%B8%8F-strings)
@@ -220,7 +222,7 @@ The `header` should be at the top of the `ADBT` template file; comments are allo
 
 #### `include`
 
-> Imports an Adblock filter list file.
+> Includes an Adblock filter list file.
 
 <br>
 
@@ -264,6 +266,61 @@ It should **not** include any metadata - that should be included via the [`heade
 It can contain any valid filter rules and comments.
 
 ❗Path to the filter list file to include can be either relative or absolute but must be enclosed within single quotes. Failing to do so, will produce a fatal error. If a single or multiple single quotes are present in the path, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
+
+<br>
+
+#### `import`
+
+> Includes an Adblock filter list file.
+
+<br>
+
+Accepts: `path: string`
+
+<br>
+
+Example:
+
+`template.adbt`
+
+```shell
+import './rules/domains.txt'
+
+nl
+
+import './rules/cosmetic.txt'
+
+nl
+
+import './rules/query.txt'
+
+export '.my-filter.txt'
+```
+
+<br>
+
+> 💡 **`import`** statements behave exactly the same as **[`include`](#include)** statements but will prepend the file path of the included filter (as a comment).
+
+<br>
+
+<br>
+
+`my-filter.txt` (_compiled_)
+
+```adblock
+! *** ./rules/domains.txt ***
+||somedomain1.com^
+||somedomain2.com^
+||somedomain3.com^
+
+! *** ./rules/cosmetic.txt ***
+##.someclass1
+##.someclass2
+
+! *** ./rules/query.txt ***
+query=
+another-query=
+```
 
 <br>
 
