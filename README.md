@@ -330,7 +330,7 @@ another-query=
 
 #### `tag`
 
-> Inserts a tag
+> Inserts a tag.
 
 <br>
 
