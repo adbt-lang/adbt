@@ -1,6 +1,6 @@
 # 📄 ADBT 🪅
 
-🐲 This file contains the latest, `v1.1.0` specification and documentation of `ADBT` - Adblock template files ⚡
+🐲 This file contains the latest, `v1.2.0` specification and documentation of `ADBT` - language and its source, Adblock template files ⚡
 
 <br>
 
