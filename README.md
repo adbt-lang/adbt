@@ -361,6 +361,10 @@ export 'my-filter.txt'
 ||somedomain1.com^
 ||somedomain2.com^
 ||somedomain3.com^
+
+! {@1} Hide these elements
+##.someclass1
+##.someclass2
 ```
 
 <br>
