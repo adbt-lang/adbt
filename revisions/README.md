@@ -4,6 +4,7 @@
 
 <br>
 
+- [v1.2.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.2.0) (_20-Aug-2023_)
 - [v1.1.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.1.0) (_19-Aug-2023_)
 - [v1.0.1](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.0.1) (_01-Aug-2023_)
 - [v1.0.0](https://github.com/igorskyflyer/file-format-adbt/releases/tag/v1.0.0) (_31-Jul-2023_)
