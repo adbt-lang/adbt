@@ -23,6 +23,7 @@
     - [tag](#tag)
     - [export](#export)
     - [nl](#nl)
+  - [Strings](#-actions)
   - [Strings](#%EF%B8%8F-strings)
   - [Paths](#%EF%B8%8F-paths)
   - [Comments](#-comments)
