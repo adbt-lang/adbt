@@ -446,6 +446,99 @@ The newline will be present in the output/compiled filter file. Used to improve 
 
 ---
 
+### 🥊 Actions
+
+Actions allow you to invoke a certain function when executing a certain statement.
+
+Two statements are currently supported:
+
+- [**`include`**](#include),
+- [**`import`**](#import)
+
+<br>
+
+#### 🦴 Supported actions
+
+**`trim`**
+Trims whitespace for each line from the included filter list file.
+
+<br>
+
+`example.adbt`
+
+```shell
+include './my-list.txt' trim
+```
+
+<br>
+
+**`dedupe`**
+Removes duplicates from the included filter list file.
+
+<br>
+
+`example.adbt`
+
+```shell
+include './my-list.txt' dedupe
+```
+
+<br>
+
+**`sort`**
+Sorts lines from the included filter list file.
+
+<br>
+
+`example.adbt`
+
+```shell
+include './my-list.txt' sort=desc
+```
+
+Supports an optional param that controls whether sorting should be done in the ascending or in descending order.
+
+To sort in ascending order, pass `asc` as the param value.  
+To sort in descending order, pass `desc` as the param value.
+
+> 💡 If not param is passed, `asc` is inferred.
+
+<br>
+
+**`append`**
+Appends an arbitrary string to each line from the included filter list file.
+
+<br>
+
+`example.adbt`
+
+```shell
+include './my-list.txt' append='$third-party'
+```
+
+The required param must be a valid string.  
+See [Strings](#%EF%B8%8F-strings) for more information.
+
+<br>
+
+**`strip`**
+Strips a certain element of each line from the included filter list file.
+
+<br>
+
+`example.adbt`
+
+```shell
+include './my-list.txt' strip=modifiers
+```
+
+Supported params are:
+
+- **`modifiers`** - will strip out all modifiers, e.g. `$third-party`, `$script`, etc.
+- **`comments`** - will strip out all comments.
+
+---
+
 ### ✒️ Strings
 
 Strings in `ADBT` are UTF-8 encoded and must be enclosed within single quotes. If a single or multiple single quotes are present in a string, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
