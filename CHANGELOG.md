@@ -2,6 +2,32 @@
 
 <br>
 
+### v1.3.0
+
+- **🪅 feat**: add support for statement actions, currently available for:
+  - [**`include`**](https://github.com/igorskyflyer/file-format-adbt#include),
+  - [**`import`**](https://github.com/igorskyflyer/file-format-adbt#import)
+
+<br>
+
+> 💡Actions allow you to invoke a certain function when including/importing filter list files.
+>
+> Supported actions:
+>
+> - trim (trims whitespace for each line from the included filter list file)
+> - dedupe (removes duplicates from the included filter list file)
+> - sort (sorts lines from the included filter list file)
+> - append (appends an arbitrary string to each line from the included filter list file)
+> - strip (strips a certain element of each line from the included filter list file)
+
+<br>
+
+> You can read more about [Actions](https://github.com/igorskyflyer/file-format-adbt#-actions) in the official ADBT documentation.
+
+- **📜 docs**: fixed typos
+
+<br>
+
 ### v1.2.0
 
 - **🪅 feat**: implement the **[`import`](./README.md#import)** statement
