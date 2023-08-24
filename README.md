@@ -497,12 +497,12 @@ Sorts lines from the included filter list file.
 include './my-list.txt' sort=desc
 ```
 
-Supports an optional param that controls whether sorting should be done in the ascending or in descending order.
+Supports an optional param that controls whether sorting should be done in ascending or descending order.
 
 To sort in ascending order, pass `asc` as the param value.  
 To sort in descending order, pass `desc` as the param value.
 
-> 💡 If not param is passed, `asc` is inferred.
+> 💡 If no param is passed, `asc` is inferred.
 
 <br>
 
