@@ -469,7 +469,7 @@ Trims whitespace for each line from the included filter list file.
 
 ```shell
 include './my-list.txt' trim
-import './my-list.txt' trim
+import './my-list.txt'  trim
 ```
 
 <br>
@@ -483,7 +483,7 @@ Removes duplicates from the included filter list file.
 
 ```shell
 include './my-list.txt' dedupe
-import './my-list.txt' dedupe
+import './my-list.txt'  dedupe
 ```
 
 <br>
@@ -497,7 +497,7 @@ Sorts lines from the included filter list file.
 
 ```shell
 include './my-list.txt' sort=desc
-import './my-list.txt' sort=desc
+import './my-list.txt'  sort=desc
 ```
 
 Supports an optional param that controls whether sorting should be done in ascending or descending order.
@@ -518,7 +518,7 @@ Appends an arbitrary string to each line from the included filter list file.
 
 ```shell
 include './my-list.txt' append='$third-party'
-import './my-list.txt' append='$third-party'
+import './my-list.txt'  append='$third-party'
 ```
 
 The required param must be a valid string.  
@@ -535,7 +535,7 @@ Strips a certain element of each line from the included filter list file.
 
 ```shell
 include './my-list.txt' strip=modifiers
-import './my-list.txt' strip=modifiers
+import './my-list.txt'  strip=modifiers
 ```
 
 Supported params are:
