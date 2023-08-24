@@ -460,7 +460,7 @@ Two statements are currently supported:
 
 #### 🦴 Supported actions
 
-**`trim`**
+**`trim`**  
 Trims whitespace for each line from the included filter list file.
 
 <br>
@@ -473,7 +473,7 @@ include './my-list.txt' trim
 
 <br>
 
-**`dedupe`**
+**`dedupe`**  
 Removes duplicates from the included filter list file.
 
 <br>
@@ -486,7 +486,7 @@ include './my-list.txt' dedupe
 
 <br>
 
-**`sort`**
+**`sort`**  
 Sorts lines from the included filter list file.
 
 <br>
@@ -506,7 +506,7 @@ To sort in descending order, pass `desc` as the param value.
 
 <br>
 
-**`append`**
+**`append`**  
 Appends an arbitrary string to each line from the included filter list file.
 
 <br>
@@ -522,7 +522,7 @@ See [Strings](#%EF%B8%8F-strings) for more information.
 
 <br>
 
-**`strip`**
+**`strip`**  
 Strips a certain element of each line from the included filter list file.
 
 <br>
