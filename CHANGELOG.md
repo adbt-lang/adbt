@@ -34,17 +34,6 @@ The following rules are enforced:
   > _🌟 Via [uPath](https://www.npmjs.com/package/@igor.dvlpr/upath)_
 
 - **🪅 feat**: detect unsupported identifiers/code ([#58](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/58))
-- **✅ fix**: change warning text background color
-- **✅ fix**: log unsupported identifiers ([#76](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/76))
-- **✅ fix**: refactor nodes logging ([#70](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/70))
-- **✅ fix**: import paths not being tracked ([#56](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/56))
-- **✅ fix**: actions remove final newline ([#54](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/54))
-- **✅ fix**: filter path not available in logs ([#52](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/52))
-- **✅ fix**: fix messages formatting ([#88](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/88))
-- **✅ fix**: various fixes to strings used in logging
-- **💻 dev**: invert node orders ([#78](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/78))
-- **💻 dev**: externalize strings ([#90](https://github.com/igorskyflyer/npm-adblock-aria-compiler/issues/90))
-- **💻 dev**: add tests and coverage
 
 <br>
 
