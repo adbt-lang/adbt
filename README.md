@@ -30,6 +30,7 @@
   - [Comments](#-comments)
     - [Internal](#internal)
     - [Exported](#exported)
+- [Inline meta](#-inline-meta)
 - [Meta files](#-meta-files)
 - [Variables](#-variables)
   - [Meta variables](#-meta-variables)
@@ -619,6 +620,13 @@ include './rules/cosmetic.txt'
 # This too!
 include './rules/query.txt'
 ```
+
+---
+
+### ⚡ Inline meta
+
+Inline meta is metadata defined in an `ADBT` template itself; as opposed to using external, `.adbm` meta files.
+Inline meta allows the user to override both the header and external metadata since inline meta has the highest priority.
 
 ---
 
