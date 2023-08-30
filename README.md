@@ -625,7 +625,7 @@ include './rules/query.txt'
 
 ### ⚡ Inline meta
 
-Inline meta is metadata defined in an `ADBT` template itself; as opposed to using external, `.adbm` meta files.
+Inline meta is metadata defined in an `ADBT` template itself; as opposed to using external, `.adbm` meta files.  
 Inline meta allows the user to override both the header and external metadata since inline meta has the highest priority.
 
 ---
