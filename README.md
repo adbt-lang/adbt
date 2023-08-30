@@ -228,7 +228,7 @@ The `header` should be at the top of the `ADBT` template file; comments are allo
 
 > Inlines metadata.
 >
-> Works as key-value pairs and has the precedence over [`header`](#header) imports and external meta files `*.adbm`.
+> Works as key-value pairs and has the precedence over [`header`](#header) imports and external meta files [`*.adbm`](#-meta-files).
 
 <br>
 
