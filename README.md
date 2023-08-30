@@ -227,11 +227,20 @@ The `header` should be at the top of the `ADBT` template file; comments are allo
 #### `meta`
 
 > Inlines metadata.
+>
 > Works as key-value pairs.
 
 <br>
 
 Accepts: `key: string = value: string`
+
+<br>
+
+Available meta properties to set:
+
+- **`title`**,
+- **`description`**,
+- **`expires`**.
 
 <br>
 
@@ -243,7 +252,13 @@ Example:
 header './headers/my-header.txt'
 
 meta title = 'My title'
+meta description = 'My filter list.'
+meta expires = '24h'
 ```
+
+<br>
+
+> 💡 When setting the `expires` meta field, the string _"(update frequency)"_ is optional in `ADBT` files. It will be automatically added to the compiled filter file.
 
 <br>
 
