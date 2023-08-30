@@ -258,7 +258,7 @@ meta expires = '24h'
 
 <br>
 
-> 💡 When setting the `expires` meta field, the string _"(update frequency)"_ is optional in `ADBT` files. It will be automatically added to the compiled filter file.
+> 💡 When setting the `expires` meta field, the string _"(update frequency)"_ is optional in `ADBT` files. In Adblock filter files is requires, hence, it will be automatically added to the compiled filter file.
 
 <br>
 
