@@ -611,6 +611,8 @@ Paths in `ADBT` are UTF-8 encoded strings and must be enclosed within single quo
 
 Paths can be either **`relative`** or **`absolute`**.
 
+> 🌟 Thanks to [uPath](https://www.npmjs.com/package/@igor.dvlpr/upath) paths are universal, all operating systems can use forward slashes - most notably Windows.
+
 ---
 
 ### 📢 Comments
