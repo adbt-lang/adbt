@@ -23,6 +23,7 @@
     - [tag](#tag)
     - [export](#export)
     - [nl](#nl)
+  - [Ordering](#-ordering)
   - [Actions](#-actions)
   - [Strings](#%EF%B8%8F-strings)
   - [Paths](#%EF%B8%8F-paths)
@@ -444,6 +445,19 @@ nl
 <br>
 
 The newline will be present in the output/compiled filter file. Used to improve readability and/or organize your rules, see [samples](#-samples) below.
+
+---
+
+### 🦭 Ordering
+
+`ADBT` templates must follow a certain structure, i.e., order of statements (which is enforced by the compiler).
+
+The following rules are enforced:
+
+- a [`header`](https://github.com/igorskyflyer/file-format-adbt#header) statement cannot appear after a [`meta`](https://github.com/metaigorskyflyer/file-format-adbt#meta) statement,
+- a [`header`](https://github.com/igorskyflyer/file-format-adbt#header) statement cannot appear after an [`include`](https://github.com/igorskyflyer/file-format-adbt#include)/[`import`](https://github.com/igorskyflyer/file-format-adbt#import) statement,
+- a [`meta`](https://github.com/igorskyflyer/file-format-adbt#meta) statement cannot appear after an [`include`](https://github.com/igorskyflyer/file-format-adbt#include)/[`import`](https://github.com/igorskyflyer/file-format-adbt#import) statement,
+- **`no statements`** can appear after an [`export`](https://github.com/igorskyflyer/file-format-adbt#export) statement.
 
 ---
 
