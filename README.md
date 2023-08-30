@@ -18,6 +18,7 @@
 - [Syntax](#-syntax)
   - [Statements](#-statements)
     - [header](#header)
+    - [meta](#meta)
     - [include](#include)
     - [import](#import)
     - [tag](#tag)
@@ -220,6 +221,29 @@ Here's an example:
 The `header` should be at the top of the `ADBT` template file; comments are allowed before it.
 
 ❗Path to the header file to include can be either relative or absolute but must be enclosed within single quotes. Failing to do so, will produce a fatal error. If a single or multiple single quotes are present in the path, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
+
+<br>
+
+#### `meta`
+
+> Inlines metadata.
+> Works as key-value pairs.
+
+<br>
+
+Accepts: `key: string = value: string`
+
+<br>
+
+Example:
+
+`template.adbt`
+
+```shell
+header './headers/my-header.txt'
+
+meta title = 'My title'
+```
 
 <br>
 
