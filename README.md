@@ -236,6 +236,8 @@ The `header` should be at the top of the `ADBT` template file; comments are allo
 
 ❗Path to the header file to include can be either relative or absolute but must be enclosed within single quotes. Failing to do so, will produce a fatal error. If a single or multiple single quotes are present in the path, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
 
+> ⚡ An `ADBT` template should include at least one header with valid metadata.
+
 <br>
 
 #### `meta`
