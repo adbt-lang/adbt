@@ -680,7 +680,7 @@ See [`meta`](#meta) for more information and usage.
 
 Unfortunately, a common header file most certainly has a property that should be different for every filter list file we compiled, in most cases, at least the `! Title: Filter name` should be different for every filter list file.
 
-This is where _meta files_ come into play. Meta files are complementary files with an extension of `*.adbm` that provide a way of having a dynamic header file that can be reused in all `ADBT` template files. We write placeholders in our common header file that get replaced at compile-time.
+This is where _meta files_ come into play. Meta files are complementary files with an extension of `*.adbm` that provide a way of having a dynamic header file that can be reused in all `ADBT` template files. We write placeholders in our common header file that get replaced at compile-time. Meta files are loaded automatically by the compiler during compilation.
 
 <br>
 
