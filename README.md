@@ -259,8 +259,8 @@ Example:
 header './new-header.txt'
 implement './templates/sites.adbt'
 
-include './rules/popup.txt'
-include './rules/popup.txt'
+include './rules/popup-domains.txt'
+include './rules/popup-cosmetic.txt'
 
 export './filter-popup.txt'
 ```
@@ -281,7 +281,15 @@ export './filter-sites.txt'
 
 <br>
 
+> [!WARNING]
+> An `ADBT` template can have only **ONE** `implement` statement, any additional `implement` statements will cause a compilation error.
+>
+
+<br>
+
 Implement files are `ADBT` template files as well and they must end with a `.adbt` extension.
+
+<br>
 
 > [!NOTE]
 > All statements except [`header`](#header) and [`export`](#export) are included into the current template at the exact place where the `implement` statement is found.
