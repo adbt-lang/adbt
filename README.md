@@ -4,7 +4,7 @@
 
 <br>
 
-> 🚀 Head to the [Releases](https://github.com/igorskyflyer/file-format-adbt/releases/) page to read the specifications of all revisions.
+> 🚀 Head to the [Releases](https://github.com/adbt-lang/adbt/releases/) page to read the specifications of all revisions.
 
 <br>
 
@@ -175,10 +175,10 @@ Line break: editor-dependent
 The following rules are enforced:
 
 - comments can appear anywhere,
-- a [`header`](https://github.com/igorskyflyer/file-format-adbt#header) statement cannot appear after a [`meta`](https://github.com/igorskyflyer/file-format-adbt#meta) statement,
-- a [`header`](https://github.com/igorskyflyer/file-format-adbt#header) statement cannot appear after an [`include`](https://github.com/igorskyflyer/file-format-adbt#include)/[`import`](https://github.com/igorskyflyer/file-format-adbt#import) statement,
-- a [`meta`](https://github.com/igorskyflyer/file-format-adbt#meta) statement cannot appear after an [`include`](https://github.com/igorskyflyer/file-format-adbt#include)/[`import`](https://github.com/igorskyflyer/file-format-adbt#import) statement,
-- **`no statements`** can appear after an [`export`](https://github.com/igorskyflyer/file-format-adbt#export) statement.
+- a [`header`](https://github.com/adbt-lang/adbt#header) statement cannot appear after a [`meta`](https://github.com/adbt-lang/adbt#meta) statement,
+- a [`header`](https://github.com/adbt-lang/adbt#header) statement cannot appear after an [`include`](https://github.com/adbt-lang/adbt#include)/[`import`](https://github.com/adbt-lang/adbt#import) statement,
+- a [`meta`](https://github.com/adbt-lang/adbt#meta) statement cannot appear after an [`include`](https://github.com/adbt-lang/adbt#include)/[`import`](https://github.com/adbt-lang/adbt#import) statement,
+- **`no statements`** can appear after an [`export`](https://github.com/adbt-lang/adbt#export) statement.
 
 ---
 
