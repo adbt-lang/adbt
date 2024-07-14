@@ -1,6 +1,6 @@
 # 📄 ADBT 🪅
 
-🐲 This file contains the latest (**`v2.0.0`**) specification and documentation of `ADBT` language and its source, Adblock template files ⚡
+🐲 This file contains the latest (**`v2.1.0`**) specification and documentation of `ADBT` language and its source, Adblock template files ⚡
 
 <br>
 
@@ -19,6 +19,7 @@
   - [Ordering](#-ordering)
   - [Statements](#-statements)
     - [header](#header)
+    - [implement](#implement)
     - [meta](#meta)
     - [include](#include)
     - [import](#import)
@@ -69,7 +70,7 @@ By using `ADBT`, maintainers will be able to incorporate multiple rules into dif
 
 Ultimately, my goal is to empower the Adblock community with an intuitive and user-friendly solution, enhancing the overall ad-blocking experience for everyone.
 
-`ADBT` and its toolchain have also been created to ease the maintenance of my Adblock filter list, [AdVoid](https://github.com/igorskyflyer/ad-void) and `AdVoid` is the first filter list that uses `ADBT` under the hood.
+`ADBT` and its toolchain have also been created to ease the maintenance of my Adblock filter list, [AdVoid](https://github.com/the-advoid/ad-void) and `AdVoid` is the first filter list that uses `ADBT` under the hood.
 
 ---
 
@@ -227,7 +228,7 @@ Here's an example:
 ! Version: 1.8.1082
 ! Last modified: 2023-07-23T19:53:00+0200
 ! Expires: 6 hours (update frequency)
-! Homepage: https://github.com/igorskyflyer/ad-void
+! Homepage: https://github.com/the-advoid/ad-void
 ! Entries: 2533
 ! Author: Igor Dimitrijević (@igorskyflyer)
 ```
@@ -237,6 +238,72 @@ The `header` should be at the top of the `ADBT` template file; comments are allo
 ❗Path to the header file to include can be either relative or absolute but must be enclosed within single quotes. Failing to do so, will produce a fatal error. If a single or multiple single quotes are present in the path, it/they must be escaped with the escape sequence, a backslash followed by a single quote, i.e. `\'`.
 
 > ⚡ An `ADBT` template should include at least one header with valid metadata.
+
+<br>
+
+#### `implement`
+
+> Implements another template's statements into the current one.
+
+<br>
+
+Accepts: `path: string`
+
+<br>
+
+Example:
+
+`popup.adbt`
+
+```shell
+header './new-header.txt'
+implement './templates/sites.adbt'
+
+include './rules/popup.txt'
+include './rules/popup.txt'
+
+export './filter-popup.txt'
+```
+
+<br>
+
+`sites.adbt`
+
+```shell
+header './header.txt'
+
+include './rules/domains.txt'
+include './rules/subdomains.txt'
+include './rules/wildcard-domains.txt'
+
+export './filter-sites.txt'
+```
+
+<br>
+
+Implement files are `ADBT` template files as well and they must end with a `.adbt` extension.
+
+> [!NOTE]
+> All statements except [`header`](#header) and [`export`](#export) are included into the current template at the exact place where the `implement` statement is found.
+>
+
+<br>
+
+Here's a full example:
+
+`popup`
+
+```adblock
+[Adblock Plus 2.0]
+! Title: AdVoid.Core
+! Description: ✈ AdVoid is an efficient AdBlock filter that blocks ads, trackers, malware and a lot more if you want it to! 👾
+! Version: 1.8.1082
+! Last modified: 2023-07-23T19:53:00+0200
+! Expires: 6 hours (update frequency)
+! Homepage: https://github.com/the-advoid/ad-void
+! Entries: 2533
+! Author: Igor Dimitrijević (@igorskyflyer)
+```
 
 <br>
 
@@ -432,7 +499,7 @@ export 'my-filter.txt'
 Tags are a part of the tagging system; special comments that get inserted in the resulting filter file, for easier navigation, search, etc.  
 Tags are auto-enumerated - starting with `0` and can contain an optional description.
 
-_🌟 Inspired by [AdVoid](https://github.com/igorskyflyer/ad-void)'s way of navigation._
+_🌟 Inspired by [AdVoid](https://github.com/the-advoid/ad-void)'s way of navigation._
 
 <br>
 
@@ -506,7 +573,7 @@ The newline will be present in the output/compiled filter file. Used to improve 
 
 ### 🥊 Actions
 
-Actions allow you to invoke a certain function when executing a certain statement.
+Actions allow you to invoke a certain function when executing a certain statement. Multiple actions can be applied to a supported statement.
 
 Two statements are currently supported:
 
@@ -1017,6 +1084,6 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 
 <br>
 
-[AdVoid](https://github.com/igorskyflyer/ad-void)
+[AdVoid](https://github.com/the-advoid/ad-void)
 
 > _✈ AdVoid is an efficient AdBlock filter that blocks ads, trackers, malware and a lot more if you want it to! 👾_
