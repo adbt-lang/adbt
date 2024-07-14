@@ -12,9 +12,9 @@
 ! Version: $version
 ! Last modified: $now
 ! Expires: 6 hours (update frequency)
-! Homepage: https://github.com/igorskyflyer/ad-void
+! Homepage: https://github.com/the-advoid/ad-void
 ! Entries: $entries
 ! Author: Igor Dimitrijević (@igorskyflyer)
-! GitHub issues: https://github.com/igorskyflyer/ad-void/issues
-! GitHub pull requests: https://github.com/igorskyflyer/ad-void/pulls
-! License: https://github.com/igorskyflyer/ad-void/blob/main/LICENSE.txt
+! GitHub issues: https://github.com/the-advoid/ad-void/issues
+! GitHub pull requests: https://github.com/the-advoid/ad-void/pulls
+! License: https://github.com/the-advoid/ad-void/blob/main/LICENSE
