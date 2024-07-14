@@ -74,7 +74,7 @@ The following rules are enforced:
 - **🪅 feat**: implement the **[`tag`](./README.md#tag)** statement
   > Introduce a tagging system; special comments that get inserted in the resulting filter file, for easier navigation, search, etc.
   >
-  > _🌟 Inspired by [AdVoid](https://github.com/igorskyflyer/ad-void)'s way of navigation._
+  > _🌟 Inspired by [AdVoid](https://github.com/the-advoid/ad-void)'s way of navigation._
 
 <br>
 
