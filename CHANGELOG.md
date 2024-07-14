@@ -12,10 +12,10 @@
 
 The following rules are enforced:
 
-- a [`header`](https://github.com/igorskyflyer/file-format-adbt#header) statement cannot appear after a [`meta`](https://github.com/metaigorskyflyer/file-format-adbt#meta) statement,
-- a [`header`](https://github.com/igorskyflyer/file-format-adbt#header) statement cannot appear after an [`include`](https://github.com/igorskyflyer/file-format-adbt#include)/[`import`](https://github.com/igorskyflyer/file-format-adbt#import) statement,
-- a [`meta`](https://github.com/igorskyflyer/file-format-adbt#meta) statement cannot appear after an [`include`](https://github.com/igorskyflyer/file-format-adbt#include)/[`import`](https://github.com/igorskyflyer/file-format-adbt#import) statement,
-- **`no statements`** can appear after an [`export`](https://github.com/igorskyflyer/file-format-adbt#export) statement.
+- a [`header`](https://github.com/adbt-lang/adbt#header) statement cannot appear after a [`meta`](https://github.com/metaigorskyflyer/file-format-adbt#meta) statement,
+- a [`header`](https://github.com/adbt-lang/adbt#header) statement cannot appear after an [`include`](https://github.com/adbt-lang/adbt#include)/[`import`](https://github.com/adbt-lang/adbt#import) statement,
+- a [`meta`](https://github.com/adbt-lang/adbt#meta) statement cannot appear after an [`include`](https://github.com/adbt-lang/adbt#include)/[`import`](https://github.com/adbt-lang/adbt#import) statement,
+- **`no statements`** can appear after an [`export`](https://github.com/adbt-lang/adbt#export) statement.
 
   Will `throw` when order is not correct.
 
@@ -42,8 +42,8 @@ The following rules are enforced:
 <p align="right"><em>25-Aug-2023</em></p>
 
 - **🪅 feat**: add support for statement actions, currently available for:
-  - [**`include`**](https://github.com/igorskyflyer/file-format-adbt#include),
-  - [**`import`**](https://github.com/igorskyflyer/file-format-adbt#import)
+  - [**`include`**](https://github.com/adbt-lang/adbt#include),
+  - [**`import`**](https://github.com/adbt-lang/adbt#import)
 
 <br>
 
@@ -59,7 +59,7 @@ The following rules are enforced:
 
 <br>
 
-> You can read more about [Actions](https://github.com/igorskyflyer/file-format-adbt#-actions) in the official ADBT documentation.
+> You can read more about [Actions](https://github.com/adbt-lang/adbt#-actions) in the official ADBT documentation.
 
 - **📜 docs**: fixed typos
 
