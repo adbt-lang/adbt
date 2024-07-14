@@ -1,11 +1,12 @@
 # 📄 ADBT 🪅
 
-🐲 This file contains the latest (**`v2.1.0`**) specification and documentation of `ADBT` language and its source, Adblock template files ⚡
+🐲 This file contains the latest (**`v2.1.0`**) specification and documentation of `ADBT` language and its source, Adblock template files. ⚡
 
 <br>
 
 > 🚀 Head to the [Releases](https://github.com/adbt-lang/adbt/releases/) page to read the specifications of all revisions.
 
+<br>
 <br>
 
 ## 📃 Table of Contents
@@ -51,11 +52,13 @@
 
 `ADBT` are text-based, UTF-8 encoded files and use LFs for line-breaks.
 
-> 💡 Even if you add CRLFs, the compiler will auto-convert them to LFs and the output file will contain only LFs.
+> [!TIP]
+> 💡 The compiler will auto-convert CRLF to LFs and the output file will contain only LFs.
+>
 
 `ADBT` templates contain header and filter rule files that will get compiled to a single filter list file.
 
-`ADBT` files and their compiler `Aria` are Adblock syntax-agnostic, you are free to use any Adblock syntax.
+`ADBT` files and their compiler `Aria` are Adblock syntax-agnostic, one is free to use any Adblock syntax.
 
 `ADBT` files can work in conjunction with optional, complimentary files `*.adbm`.
 
@@ -64,7 +67,7 @@
 ## 📌 Motivation
 
 Ad-blocking filters have always been a valuable tool to improve web browsing experiences but creating and maintaining them often poses challenges. The existing methods can be cumbersome, leading to repetitive tasks and difficult-to-manage source code.  
-Recognizing this issue, I embarked on a project to develop a custom language, file format, parser and a Visual Studio Code extension tailored specifically as Adblock templates. My motivation is to offer filter lists creators and maintainers a more straightforward and efficient way to craft filter lists.
+Recognizing this issue, I, [Igor Dimitrijević](https://github.com/igorskyflyer), embarked on a project to develop a custom language, file format, parser, compiler and a Visual Studio Code extension tailored specifically for working with Adblock filter files using templates. My motivation is to offer filter lists creators and maintainers a more straightforward and efficient way to craft filter lists.
 
 By using `ADBT`, maintainers will be able to incorporate multiple rules into different output filter lists, have the versioning of filter lists done automatically for them, include both internal and exported comments, organize filter lists and filter rules.
 
@@ -76,7 +79,7 @@ Ultimately, my goal is to empower the Adblock community with an intuitive and us
 
 ## 🍭 Quick start
 
-Even though technically you can write `ADBT` \(`*.adbt`) templates and meta files \(`*.adbm`) in any text editor, I highly recommend using [Visual Studio Code](https://code.visualstudio.com/) as your editor.
+Even though technically one can write `ADBT` \(`*.adbt`) templates and meta files \(`*.adbm`) in any text editor, it's highly recommended to use [Visual Studio Code](https://code.visualstudio.com/) as your editor.
 
 <br>
 
