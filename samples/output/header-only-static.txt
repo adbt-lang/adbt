@@ -11,10 +11,10 @@
 ! Description: Blocks ads.
 ! Last modified: 2022-10-19T22:03:00+0200
 ! Expires: 6 hours (update frequency)
-! Homepage: https://github.com/igorskyflyer/ad-void
+! Homepage: https://github.com/the-advoid/ad-void
 ! Author: Igor Dimitrijević (@igorskyflyer)
-! GitHub issues: https://github.com/igorskyflyer/ad-void/issues
-! GitHub pull requests: https://github.com/igorskyflyer/ad-void/pulls
-! License: https://github.com/igorskyflyer/ad-void/blob/main/LICENSE.txt
+! GitHub issues: https://github.com/the-advoid/ad-void/issues
+! GitHub pull requests: https://github.com/the-advoid/ad-void/pulls
+! License: https://github.com/the-advoid/ad-void/blob/main/LICENSE
 ! Version: 1.0.4
 ! Sample: importing header only
