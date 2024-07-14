@@ -257,6 +257,7 @@ Example:
 
 ```shell
 header './new-header.txt'
+
 implement './templates/sites.adbt'
 
 include './rules/popup-domains.txt'
@@ -297,20 +298,22 @@ Implement files are `ADBT` template files as well and they must end with a `.adb
 
 <br>
 
-Here's a full example:
+is the equivalent of writing:
 
-`popup`
+`popup.adbt`
 
-```adblock
-[Adblock Plus 2.0]
-! Title: AdVoid.Core
-! Description: ✈ AdVoid is an efficient AdBlock filter that blocks ads, trackers, malware and a lot more if you want it to! 👾
-! Version: 1.8.1082
-! Last modified: 2023-07-23T19:53:00+0200
-! Expires: 6 hours (update frequency)
-! Homepage: https://github.com/the-advoid/ad-void
-! Entries: 2533
-! Author: Igor Dimitrijević (@igorskyflyer)
+```shell
+header './new-header.txt'
+
+@ implemented from sites.adbt
+include './rules/domains.txt'
+include './rules/subdomains.txt'
+include './rules/wildcard-domains.txt'
+@ current includes
+include './rules/popup-domains.txt'
+include './rules/popup-cosmetic.txt'
+
+export './filter-popup.txt'
 ```
 
 <br>
